@@ -1,4 +1,4 @@
-# solo_fit
+# SoloFit
 
 Empowering fitness enthusiasts with gamified challenges inspired by Solo Leveling, integrating AI guidance and wearable device tracking for personalized health journeys.
 
