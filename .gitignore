@@ -1,5 +1,5 @@
 # Miscellaneous
-*.env
+# *.env
 *.class
 *.log
 *.pyc
@@ -44,5 +44,5 @@ app.*.map.json
 /android/app/release
 
 # Firebase
-firebase.json
-/android/app/google-services.json
+# firebase.json
+# /android/app/google-services.json

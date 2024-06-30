@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "902872738475",
+    "project_id": "solofit-7037a",
+    "storage_bucket": "solofit-7037a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902872738475:android:db0f8aa42e2a374776e5ee",
+        "android_client_info": {
+          "package_name": "com.solofit.arise.solo_fit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbExoLN7Io9a_ei-uUguxeXPieuwbGseI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
