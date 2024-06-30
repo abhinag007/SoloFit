@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDaJLnR58IWbtZs5dJe56tIAT72y6N6vYs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>902872738475</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.solofit.arise.soloFit</string>
+	<key>PROJECT_ID</key>
+	<string>solofit-7037a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>solofit-7037a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:902872738475:ios:fb0ceff876c5ae8276e5ee</string>
+</dict>
+</plist>
