@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:solo_fit/core/constants/app_images.dart';
+import 'package:solo_fit/core/constants/app_strings.dart';
+import 'package:solo_fit/features/auth/screens/login.dart';
 
 class SlideUpWithDissolveAnimation extends StatefulWidget {
   const SlideUpWithDissolveAnimation({super.key});
@@ -31,7 +34,9 @@ class _SlideUpWithDissolveAnimationState
     return Scaffold(
       body: GestureDetector(
         onTap: () {
-          if (_currentPage == backgroundImages.length) {}
+          if (_currentPage == backgroundImages.length - 1) {
+            Get.to(const LoginPage());
+          }
         },
         onVerticalDragUpdate: (details) {
           if (details.primaryDelta! < 0) {
@@ -76,7 +81,7 @@ class _SlideUpWithDissolveAnimationState
                             height: 50,
                           ),
                           Text(
-                            'SoloFit',
+                            soloFit,
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 58,
