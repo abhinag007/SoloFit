@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
-import 'package:solo_fit/features/common/widgets/baground_image.dart';
-
-class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({super.key});
-
-  @override
-  State<OnboardingScreen> createState() => _OnboardingScreenState();
-}
-
-class _OnboardingScreenState extends State<OnboardingScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SlideUpWithDissolveAnimation(),
-    );
-  }
-}
+import 'package:solo_fit/core/constants/app_images.dart';
 
 class SlideUpWithDissolveAnimation extends StatefulWidget {
   const SlideUpWithDissolveAnimation({Key? key}) : super(key: key);
@@ -37,8 +20,8 @@ class _SlideUpWithDissolveAnimationState extends State<SlideUpWithDissolveAnimat
   }
 
   List<String> backgroundImages = [
-    'assets/images/backgroundCloseEye.png',
-    'assets/images/openeye.png',
+    backgroundImageEyeClosed,
+    backgroundImageEyeOpen
   ];
 
   @override

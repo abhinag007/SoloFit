@@ -1,17 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:solo_fit/core/configs/firebase_options.dart';
-import 'package:solo_fit/features/screen/onboarding.dart';
+import 'package:solo_fit/features/onboarding/screen/onboarding.dart';
 
 import '../core/constants/themes/themes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
-  // await Firebase.initializeApp(
-  //     options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
