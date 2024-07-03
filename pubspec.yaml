@@ -54,6 +54,7 @@ dependencies:
   animations: ^2.0.11
   rive: ^0.13.9
   carousel_slider: ^4.2.1
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:

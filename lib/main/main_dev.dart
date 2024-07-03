@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       SizeConfig().init(context);
       return GetMaterialApp(
         title: 'Solo Fit',
-        theme: AppThemes.lightTheme, // Initial theme
+        theme: AppThemes.darkTheme, // Initial theme
         home: const OnboardingScreen(),
       );
     });

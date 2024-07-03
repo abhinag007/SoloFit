@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-Container bagroundGif(String path) {
+Container bagroundGif({required String path, required double opacity}) {
   return Container(
     decoration: BoxDecoration(
       image: DecorationImage(
@@ -11,7 +11,7 @@ Container bagroundGif(String path) {
       ),
     ),
     child: Container(
-      color: Colors.black.withOpacity(0.4), // Adjust the opacity here
+      color: Colors.black.withOpacity(opacity), // Adjust the opacity here
     ),
   );
 }
