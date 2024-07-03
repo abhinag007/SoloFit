@@ -1,8 +1,4 @@
-import 'dart:ffi';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:solo_fit/core/constants/app_images.dart';
 import 'package:solo_fit/core/constants/app_strings.dart';
@@ -60,14 +56,14 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "$dontHaveAccount ",
                       style: TextStyle(fontSize: 24),
                     ),
                     GestureDetector(
                       onTap: () => Get.to(SignupPage()),
-                      child: Text(
-                        "$signup",
+                      child: const Text(
+                        signup,
                         style: TextStyle(
                           fontSize: 24,
                           decoration: TextDecoration.underline,
@@ -76,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 )
               ],

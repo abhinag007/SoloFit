@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:solo_fit/core/constants/app_images.dart';
 import 'package:solo_fit/core/constants/app_strings.dart';
 import 'package:solo_fit/features/auth/screens/login.dart';
-import 'package:solo_fit/features/auth/screens/signup.dart';
 
 class SlideUpWithDissolveAnimation extends StatefulWidget {
   const SlideUpWithDissolveAnimation({super.key});
