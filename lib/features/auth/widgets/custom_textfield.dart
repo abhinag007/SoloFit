@@ -13,7 +13,7 @@ class CustomTextField extends StatelessWidget {
   final Function(String)? onChanged;
   final Function(String)? onSubmitted;
 
-  CustomTextField({
+  const CustomTextField({super.key, 
     required this.controller,
     required this.labelText,
     this.hintText,
@@ -58,7 +58,7 @@ class CustomTextField extends StatelessWidget {
           ),
         ),
         contentPadding:
-            const EdgeInsets.symmetric(vertical: 16.0, horizontal: 10),
+            const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20),
         prefixIcon: prefixIcon != null ? Icon(prefixIcon) : null,
         suffixIcon: suffixIcon != null ? Icon(suffixIcon) : null,
         hintStyle: const TextStyle(fontSize: 24, color: colorWhite),

@@ -7,6 +7,7 @@ const loginFromGoogle = 'Login From Google';
 const loginFromMeta = 'Login From Meta';
 const dontHaveAccount = 'Don’t have an account?';
 const signup = 'SignUp';
+const signin = 'SignIn';
 const enterEmailAddress = 'Enter Email Address';
 const signupFromGoogle = 'Signup From Google';
 const signupFromMeta = 'Signup From Meta';

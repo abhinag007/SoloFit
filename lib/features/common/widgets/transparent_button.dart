@@ -36,7 +36,7 @@ class TransparentButton extends StatelessWidget {
                 visible: imagePath != null,
                 child:
                     imagePath != null ? Image.asset(imagePath!) : Container()),
-            Visibility(visible: imagePath != null, child: SizedBox(width: 8)),
+            Visibility(visible: imagePath != null, child: SizedBox(width: 12)),
             Text(
               text,
               style: const TextStyle(

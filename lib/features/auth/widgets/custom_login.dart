@@ -7,6 +7,8 @@ class CustomFieldsLogin extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  CustomFieldsLogin({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(

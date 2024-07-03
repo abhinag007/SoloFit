@@ -1,11 +1,14 @@
 import 'dart:ffi';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:solo_fit/core/constants/app_images.dart';
 import 'package:solo_fit/core/constants/app_strings.dart';
 import 'package:solo_fit/core/constants/colors_constants.dart';
 import 'package:solo_fit/core/utils/responsive_util.dart';
+import 'package:solo_fit/features/auth/screens/signup.dart';
 import 'package:solo_fit/features/auth/widgets/custom_login.dart';
 import 'package:solo_fit/features/common/widgets/baground_gif.dart';
 import 'package:solo_fit/features/common/widgets/common_widgets.dart';
@@ -24,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
       resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
-          bagroundGif(path: sl1Gif, opacity: 0.6),
+          bagroundGif(path: slb1Gif, opacity: 0.6),
           Positioned.fill(
             top: SizeConfig.blockSizeVertical * 25,
             child: Align(
@@ -36,10 +39,20 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Positioned.fill(
+            top: SizeConfig.blockSizeVertical * 35,
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                loginTag,
+                style: textStyle(28, colorWhite),
+              ),
+            ),
+          ),
+          Positioned.fill(
             top: SizeConfig.blockSizeVertical * 45,
             child: CustomFieldsLogin(),
           ),
-          const Align(
+          Align(
             alignment: Alignment.bottomCenter,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -51,11 +64,14 @@ class _LoginPageState extends State<LoginPage> {
                       "$dontHaveAccount ",
                       style: TextStyle(fontSize: 24),
                     ),
-                    Text(
-                      "$signup",
-                      style: TextStyle(
-                        fontSize: 24,
-                        decoration: TextDecoration.underline,
+                    GestureDetector(
+                      onTap: () => Get.to(SignupPage()),
+                      child: Text(
+                        "$signup",
+                        style: TextStyle(
+                          fontSize: 24,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
                   ],
